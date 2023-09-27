@@ -1,6 +1,6 @@
 const userHour = +prompt('Enter number of hours:');
 
-if (isNaN(userHour) !== true && userHour !== 0) {
+if (userHour) {
     const amountOfSeconds = BigInt(userHour * 3600);
     alert(amountOfSeconds);
 } else {
